@@ -8,7 +8,7 @@ public class SocketClient {
     public static void main(String[] args) {
         Socket socket = null;
         try {
-            socket = new Socket("127.0.0.1", 1024);
+            socket = new Socket("127.0.0.1", 1025);
 
             OutputStream outputStream = socket.getOutputStream();
             PrintWriter printWriter = new PrintWriter(outputStream);
